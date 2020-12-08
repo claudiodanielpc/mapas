@@ -1,3 +1,5 @@
+#Código para visualizar la ubicación de los mercados públicos en la CDMX
+##Se importa la paquetería
 import pandas as pd
 import numpy as np
 import geopandas as gpd
