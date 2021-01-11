@@ -92,7 +92,8 @@ ggplot() +
   annotation_north_arrow(location='tr')+
   # agrega títulos, notas y fuente
   labs(title = "Ciudad de México. Líneas en servicio 
-del Sistema de Transporte Colectivo Metro",
+del Sistema de Transporte Colectivo 
+Metro",
        caption = "Nota:
 Aquellas líneas que actualmente se encuentran fuera de servicio derivado 
 del incendio en el PCC del Metro fueron omitidas.
