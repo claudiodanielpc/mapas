@@ -1,10 +1,8 @@
-#Mapa de establecimientos de alojamiento temporal
+#Mapas del Metro
 
 ##Paquetería necesaria
 if(!require('pacman')) install.packages('pacman')
-pacman::p_load(tidyverse,readxl,utils,
-               data.table,dplyr,treemapify,viridis,
-               sf,ggspatial,kableExtra)
+pacman::p_load(tidyverse,utils, viridis,sf,ggspatial)
 
 
 ###Se carga la cartografía de colonias y alcaldías
