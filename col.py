@@ -63,6 +63,8 @@ with open("colonias.json", "w") as outfile:
 ##Abrir el archivo GeoJSON generado
 colonias = gpd.read_file("colonias.json")
 
+
+
 ##Importar shapefile del Marco Geostadístico Nacional 2020. Este archivo está almacenado en mi computadora.
 cdmx = gpd.read_file("C:/Users/ALIENWARE/Documents/censo2020/conjunto_de_datos/09mun.shp")
 #Reproyectar
@@ -86,3 +88,10 @@ plt.axis("equal")
 ##Salvar y mostrar
 plt.savefig("mapacol.png",format="png",dpi=600,transparent=False)
 plt.show()
+
+
+
+#############
+###Guardar colonias en shapefile por si se quiere usar en GIS.
+colonias.to_file("colonias.shp")
+
